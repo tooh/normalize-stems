@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "normalize-stems"
+version = "0.1.0"
+description = "Normalize Logic Pro stem filenames and prefix them with track numbers for Helix Stadium"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "tooh" }
+]
+keywords = ["logic-pro", "stems", "helix-stadium", "audio", "music-production"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+
+[project.scripts]
+normalize-stems = "normalize_stems:main"
+
+[tool.setuptools]
+py-modules = ["normalize_stems"]
